@@ -1,3 +1,154 @@
 body {
   background: peachpuff;
+  font-size: 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: .33fr .34fr .33fr;
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  min-height: 100vh;
+  text-align: center;
+  border: 1px solid peachpuff;
+}
+.a {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: red;
+  display: flex;
+  flex-grow: 1;
+
+}
+.b {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: red;
+  display: flex;
+  flex-grow: 1;
+  
+}
+.c {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: red;
+  display: flex;
+  flex-grow: 1;
+}
+.d {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  background-color: red;
+  display: flex;
+  flex-grow: 1;
+}
+.e {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background-color: red;
+  display: flex;
+  flex-grow: 1;
+}
+.f {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background-color: red;
+  display: flex;
+  flex-grow: 1;
+}
+.g {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  background-color: red;
+  display: flex;
+  flex-grow: 1;
+}
+.h {
+  grid-column: 1/4;
+  grid-row: 4/5;
+  background-color: red;
+  display: flex;
+  min-height: 30vh;
+  flex-grow: 5;
+}
+@media (min-width: 750px) {
+  .container {
+    display: grid;
+    grid-template-columns: .25fr .25fr .25fr .25fr;
+    grid-template-rows: .4fr .3fr .3fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    min-height: 100vh;
+    /*text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    /*border: 20px solid peachpuff;*/
+   
+  }
+  .a {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: red;
+    display: flex;
+    max-width: 100%;
+
+       
+  }
+  .b {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: red;
+    display: flex;
+    min-width: 30%;
+    flex-grow: 1;
+    
+  }
+  .c {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: red;
+    display: flex;
+    min-width: 30%;
+    flex-grow: 1;
+  }
+  .d {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-color: red;
+    display: flex;
+    flex-grow: 1;
+  }
+  .e {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-color: red;
+    display: flex;
+    flex-grow: 1;
+  }
+  .f {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: red;
+    display: flex;
+    flex-grow: 1;
+  }
+  .g {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-color: red;
+    display: flex;
+    flex-grow: 1;
+  }
+  .h {
+    grid-column: 4/5;
+    grid-row: 2/4;
+    background-color: red;
+    display: flex;
+    min-height: 30vh;
+    flex-grow: 5;
+}
 }
